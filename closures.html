@@ -1,0 +1,24 @@
+<html>
+<head><title>Closures</title>
+<script type="text/javascript">
+   function paint(type,color){
+   	var str="The " + type + "is " + color;
+   	var tellme=function(){
+   		document.write("<big>" + str + ".</big><br/>")
+   	}
+   	return tellme;
+   }
+</script>
+</head>
+<body bgcolor="lightgreen">
+<h2>Testing a closure</h2>
+<script type="text/javascript">
+   var say1=paint("rose","red");
+   var say2=paint("sun","yellow");
+   alert(say1);
+   say1();
+   say2();
+</script>
+
+</body>
+</html>
